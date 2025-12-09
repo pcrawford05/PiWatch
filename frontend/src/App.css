@@ -1,0 +1,63 @@
+#header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#curr-img {
+  /* position: relative; */
+  border: 1px solid black;
+
+  text-align: center;
+}
+#curr-img img {
+  width: 80%;
+  height: auto;
+
+  display: inline-block;
+}
+#curr-img h2 {
+  text-align: center;
+}
+
+#log h2 {
+  text-align: center;
+}
+
+/* GPT-5 Mini created the scroll CSS seen below
+Prompt: Read my front end and help me understand how I would make the image log more of a scroll bar so that the page woudn't get infinitely long */
+
+/* Make the log side panel scrollable so the page doesn't grow infinitely */
+#log {
+  /* Keep the log limited to viewport height minus header */
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  padding: 8px;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Keep the log title visible while scrolling */
+#log h2 {
+  position: sticky;
+  top: 0;
+  background: white;
+  margin: 0 0 8px 0;
+  padding: 6px 0;
+  z-index: 2;
+}
+
+.log-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.log-entry p {
+  margin: 0;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
