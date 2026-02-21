@@ -1,3 +1,5 @@
+See Reflection PDF for more details.
+
 ## Team Members
 Alex Frederic
 Peyton Crawford
